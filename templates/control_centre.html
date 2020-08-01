@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <style>
+        .grey-bg {
+            background: #ccc;
+            /* min-height: 100vh; */
+        }
+
+        .full-w {
+            width: 100vw;
+        }
+
+        .graph-box{
+            position: relative;
+        }
+
+        #timer{
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="adarsh.css">
+    <nav class="navbar navbar-dark bg-dark text-center">
+        <div class="d-flex justify-content-between">
+            <div class="text-center">
+                <a class="navbar-brand" href="#">
+                    Team-binaries (Centre Admin) [ Web dashboard ]
+                </a>
+            </div>
+            <div>
+                <button class="btn btn-outline-primary">Logout</button>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col-9 graph-box">
+            <canvas id="springydemo" />
+        </div>
+        <div class="col-3 grey-bg">
+
+            <h3 class="text-center my-3 font-weight-bold">Notifications:</h3>
+            <div class="alert alert-warning" id="myBtn">Wheat deficiency alert on centre 3</div>
+            <div class="alert alert-danger">Cyclone alert on centre 2</div>
+            <div class="alert alert-primary">Surplus wheat notification from centre 1</div>
+            <div class="alert alert-warning">Rice deficieny in centre 1</div>
+            <div class="alert alert-default">.....fetching updates from the server
+                <div class="spinner-border" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="jumbotron">
+        <div class="flex-container">
+            <div class="w3-card-4 alert alert-warning" id="c1" style="width:20%">
+
+                <div class="w3-container w3-center">
+                    <h3>Centre-1</h3>
+
+
+                    <div class="w3-section">
+                        Admin : <br>
+                        Deficient Crops : <br>
+                        Surplus Crops : <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w3-card-4 alert alert-warning" id="c2" style="width:20%">
+
+                <div class="w3-container w3-center">
+                    <h3>Centre-2</h3>
+
+
+                    <div class="w3-section">
+                        Admin : <br>
+                        Deficient Crops : <br>
+                        Surplus Crops : <br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="w3-card-4 alert alert-warning" id="c3" style="width:20%">
+
+                <div class="w3-container w3-center">
+                    <h3>Centre-3</h3>
+
+
+                    <div class="w3-section">
+                        Admin : <br>
+                        Deficient Crops : <br>
+                        Surplus Crops : <br>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w3-card-4 alert alert-warning" id="c2" style="width:20%">
+
+                <div class="w3-container w3-center">
+                    <h3>Centre-4</h3>
+
+
+                    <div class="w3-section">
+                        Admin : <br>
+                        Deficient Crops : <br>
+                        Surplus Crops : <br>
+                    </div>
+
+                </div>
+            </div>
+            <div class="w3-card-4 alert alert-warning" id="c2" style="width:20%">
+
+                <div class="w3-container w3-center">
+                    <h3>Centre-5</h3>
+
+
+                    <div class="w3-section">
+                        Admin : <br>
+                        Deficient Crops : <br>
+                        Surplus Crops : <br>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+    <script src="./jquery.js"></script>
+    <script src="./spring.js"></script>
+    <script src="./springyui.js"></script>
+    <script src="./engine.js"></script>
+
+</body>
+
+</html>
